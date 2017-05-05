@@ -1,0 +1,104 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Comfortaa';
+}
+
+a {
+	text-decoration: none;
+}
+
+button, 
+button:active, 
+button:focus {
+	outline: none;
+}
+
+body {
+	background-color: #111;
+}
+
+.container {
+	width: 1100px;
+	min-height: 100%;
+	margin: 0 auto;
+	background-color: #555;
+}
+
+.prods, 
+.flavors {
+	display: none;
+}
+
+.prods.active, 
+.flavors.active {
+	display: block;
+}
+
+.prod-item,
+.flavor-item {
+	width: 210px;
+	margin: 5px 5px 15px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #fff;
+	/*float: left;*/
+	vertical-align: top;
+	text-align: center;
+	display: inline-block;
+}
+
+.prod-item:hover,
+.flavor-item:hover {
+	background-color: #e3e3e3;
+}
+
+.prod-item img,
+.flavor-item img {
+	width: 190px;
+	height: 190px;
+	padding: 5px 0;
+}
+
+.prod-item p {
+	font-size: 20px;
+	color: #333;
+}
+
+.flavors button {
+	width: calc(100% - 10px);
+	margin: 5px;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #111;
+	background-color: #e3e3e3;
+	cursor: pointer;
+}
+
+.flavors button:hover {
+	color: #e3e3e3;
+	background-color: #111;
+}
+
+.flavor-item .title,
+.flavor-item .flavor {
+	text-transform: uppercase;
+	color: #111;
+}
+
+.flavor-item .title {
+	font-weight: 500;
+}
+
+.flavor-item .flavor {
+	font-weight: 900;
+}
+
+.flavor-item .desc {
+	font-size: 12px;
+	color: #aaa;
+}
